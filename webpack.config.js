@@ -18,7 +18,15 @@ module.exports = {
     library: {
       name: "MyLibrary",
       type: "umd",
+      auxiliaryComment: {
+        root: "Root Comment",
+        commonjs: "CommonJS Comment",
+        commonjs2: "CommonJS2 Comment",
+        amd: "AMD Comment",
+      },
+      umdNamedDefine: true,
     },
+    // iife: true,
   },
   module: {
     rules: [
